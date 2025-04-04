@@ -18,8 +18,8 @@ dependencies = [
   "fvcore",
   "iopath",
   "xformers>0.0.18",
-  "submitit"
-
+  "submitit",
+  "datasets>=3.5.0",
 ]
 
 
@@ -30,7 +30,7 @@ cpu = [
   "torchvision",
 ]
 cu124 = [
-  "torch",
+  "torch==2.4.0+cu124",
   "torchvision",
   "cuml-cu12"
 ]

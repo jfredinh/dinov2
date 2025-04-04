@@ -77,6 +77,9 @@ def get_args_parser(
         type=str,
         help="Nodes to exclude",
     )
+
+    parser.add_argument("--local-rank", default=0, type=int, help="Variable for distributed computing.") 
+    
     return parser
 
 
